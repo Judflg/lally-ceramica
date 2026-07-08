@@ -1,0 +1,227 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.site-header {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    padding: 20px 40px;
+}
+
+.site-header, .liste-container, .bild-container, .bild-struktur, .text-button-container {
+    background-color: #82c9b8;
+}
+
+
+.header-left {
+    display: flex;
+    gap: 20px;
+    justify-self: start;
+}
+
+.header-right {
+    display: flex;
+    gap: 20px;
+    justify-self: end;
+    align-items: center;
+}
+
+.social-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.header-center img {
+    width: 40px;
+    height: 40px;
+}
+
+.header-center {
+    justify-self: center;
+}
+
+.header-right img {
+    display: block;
+}
+
+.instagram-link img {
+    width: 24px;
+    height: 24px;
+}
+
+.warenkorb-link img {
+    width: 32px;
+    height: 32px;
+}
+
+
+.instgram-link, .warenkorb-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.social-link:hover, .instagram-link:hover, .warenkorb-link:hover, .header-center:hover, .footer-link:hover {
+    transform: scale(1.15);
+    opacity: 0.9;
+}
+
+.social-link img {
+    max-height: 50px;
+    width: auto;
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.ueberschrift01 {
+    font-family: haylad-micro;
+    font-size: 44px;
+    letter-spacing: 1px;
+}
+
+.article-container {
+    max-width: 1200px;
+    align-items: center;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+article p {
+    text-align: justify;
+}
+
+.bild-container {
+    display: flex;
+    gap: 30px;
+    margin-top: 0%; /* Abstand nach oben */
+    align-items: center; 
+}
+
+.product-link01, .product-link02 {
+    flex: 1; /* beide Bilder bekommen gleich viel Platz */
+}
+
+.product-link01 {
+    width: 650px;
+    height: 550px;
+    overflow: hidden;
+    padding: 20px 40px;
+}
+
+.product-link01 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-image:linear-gradient(180deg, #6495ED, #59c5ac);
+    border-radius: 20px;
+}
+
+.product-link02 {
+    width: 650px;
+    height: 550px;
+    overflow: hidden;
+    border-radius: 90% 75% 90% 75%/ 52% 52% 52% 52%;
+    padding: 20px 40px;
+}
+
+.product-link02 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-color: #FFFACD;
+}
+
+.bild-struktur {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.bild-container {
+    display: flex;
+    gap: 30px;
+}
+
+.text-button-container {
+    display: flex;
+    gap: 60px;
+    align-items: center;
+    border-left: 40px solid #82c9b8;
+}
+
+.button {
+    padding: 16px 64px;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    background: black;
+    color: #82c9b8;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.button:hover {
+    opacity: 0.8;
+}
+
+.Produkte {
+    font-family: haylad-micro;
+    font-size: 80px;
+    letter-spacing: 2px;
+    font-weight: light;
+}
+
+
+.ueberschrift02 {
+    font-family: haylad-micro;
+    font-size: 24px;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.ueberschrift03 {
+    font-family: haylad-micro;
+    font-size: 20px;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+
+.footer-link {
+    color: inherit;
+    text-decoration: underline;
+}
+
+.site-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #D3D3D3;
+}
+
+.footer-right-container {
+    display: flex;
+    gap: 80px;
+}
+
+.footer-left,
+.footer-right {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
