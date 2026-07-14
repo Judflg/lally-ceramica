@@ -1,227 +1,643 @@
-body {
-    font-family: 'Courier New', Courier, monospace;
-    background-color: #f4f4f4;
-    text-align: center;
+@font-face {
+    font-family: haylad-micro;
+    src: url("fonts/haylad-micro.ttf");
 }
+
+
+/* ==========================
+   GRUNDSTIL
+========================== */
+
+
+body {
+
+    margin:0;
+    font-family:'Courier New', Courier, monospace;
+    background-color:#f4f4f4;
+    text-align:center;
+
+}
+
+
+.site-header,
+.bild-struktur,
+.bild-container,
+.text-button-container {
+
+    background-color:#82c9b8;
+
+}
+
+
+
+a {
+
+    color:inherit;
+
+}
+
+
+
+
+
+/* ==========================
+   HEADER DESKTOP
+========================== */
+
 
 .site-header {
-    display: grid;
-    grid-template-columns: 1fr auto 1fr;
-    align-items: center;
-    padding: 20px 40px;
+
+    display:grid;
+    grid-template-columns:1fr auto 1fr;
+    align-items:center;
+    padding:20px 40px;
+
 }
 
-.site-header, .liste-container, .bild-container, .bild-struktur, .text-button-container {
-    background-color: #82c9b8;
-}
 
 
 .header-left {
-    display: flex;
-    gap: 20px;
-    justify-self: start;
+
+    justify-self:start;
+    position:relative;
+
 }
 
-.header-right {
-    display: flex;
-    gap: 20px;
-    justify-self: end;
-    align-items: center;
+
+.desktop-nav {
+
+    display:flex;
+    gap:20px;
+
 }
+
+
 
 .social-link {
-    text-decoration: none;
-    color: inherit;
+
+    text-decoration:none;
+
 }
 
-.header-center img {
-    width: 40px;
-    height: 40px;
-}
+
+
 
 .header-center {
-    justify-self: center;
+
+    justify-self:center;
+
 }
+
+
+
+.header-right {
+
+    justify-self:end;
+    display:flex;
+    align-items:center;
+    gap:20px;
+
+}
+
+
 
 .header-right img {
-    display: block;
+
+    display:block;
+
 }
+
 
 .instagram-link img {
-    width: 24px;
-    height: 24px;
+
+    width:24px;
+    height:24px;
+
 }
+
+
 
 .warenkorb-link img {
-    width: 32px;
-    height: 32px;
+
+    width:32px;
+    height:32px;
+
 }
 
 
-.instgram-link, .warenkorb-link {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-}
 
+.social-link:hover,
+.instagram-link:hover,
+.warenkorb-link:hover,
+.footer-link:hover {
 
-.social-link:hover, .instagram-link:hover, .warenkorb-link:hover, .header-center:hover, .footer-link:hover {
-    transform: scale(1.15);
-    opacity: 0.9;
-}
+    transform:scale(1.15);
+    opacity:.8;
 
-.social-link img {
-    max-height: 50px;
-    width: auto;
-    display: block;
 }
 
 
 
 
 
+/* Hamburger versteckt Desktop */
+
+.menu-toggle,
+.mobile-menu {
+
+    display:none;
+
+}
 
 
 
 
+
+/* ==========================
+   SCHRIFTEN
+========================== */
+
+
+.ueberschrift01 {
+
+    font-family:haylad-micro;
+    font-size:44px;
+    letter-spacing:1px;
+
+}
+
+
+
+.Produkte {
+
+    font-family:haylad-micro;
+    font-size:80px;
+    letter-spacing:2px;
+    font-weight:300;
+
+}
+
+
+
+.ueberschrift02 {
+
+    font-family:haylad-micro;
+    font-size:24px;
+
+}
+
+
+
+.ueberschrift03 {
+
+    font-family:haylad-micro;
+    font-size:20px;
+
+}
+
+
+
+
+
+/* ==========================
+   BILDER
+========================== */
+
+
+.bild-struktur {
+
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+
+}
+
+
+
+.bild-container {
+
+    display:flex;
+    gap:30px;
+    padding:20px;
+
+}
+
+
+
+.product-link01,
+.product-link02 {
+
+    flex:1;
+    overflow:hidden;
+
+}
+
+
+
+.product-link01 img,
+.product-link02 img {
+
+    width:100%;
+    height:550px;
+    object-fit:cover;
+
+}
+
+
+
+.product-link01 img {
+
+    border-radius:20px;
+    background-image:linear-gradient(180deg,#6495ED,#59c5ac);
+
+}
+
+
+
+.product-link02 img {
+
+    border-radius:90% 75% 90% 75% / 52% 52% 52% 52%;
+    background-color:#FFFACD;
+
+}
+
+
+
+
+
+/* ==========================
+   BUTTON BEREICH
+========================== */
+
+
+.text-button-container {
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:60px;
+    padding:20px;
+
+}
+
+
+
+.button {
+
+    padding:16px 64px;
+    background:black;
+    color:#82c9b8;
+    text-decoration:none;
+    border-radius:5px;
+
+}
+
+
+
+.button:hover {
+
+    opacity:.8;
+
+}
+
+
+
+
+
+/* ==========================
+   ARTIKEL
+========================== */
+
+
+.article-container {
+
+    max-width:1200px;
+    margin:40px auto;
+
+}
+
+
+
+article p {
+
+    text-align:justify;
+    line-height:1.6;
+
+}
+
+
+
+
+
+/* ==========================
+   FOOTER
+========================== */
+
+
+.site-footer {
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:40px;
+    background:#D3D3D3;
+
+}
+
+
+
+.footer-right-container {
+
+    display:flex;
+    gap:80px;
+
+}
+
+
+
+.footer-left,
+.footer-right {
+
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+
+}
+
+
+
+.footer-link {
+
+    text-decoration:underline;
+
+}
+
+
+
+
+
+
+
+/* ==================================================
+   MOBILE VERSION
+================================================== */
+
+
+@media screen and (max-width:768px) {
+
+
+
+/* HEADER */
+
+.site-header {
+
+    grid-template-columns:auto 1fr auto;
+    padding:20px;
+
+}
+
+
+
+.header-left {
+
+    justify-self:start;
+
+}
+
+
+
+.header-center {
+
+    justify-self:center;
+
+}
+
+
+
+.header-right {
+
+    justify-self:end;
+    gap:12px;
+
+}
 
 
 
 .ueberschrift01 {
-    font-family: haylad-micro;
-    font-size: 44px;
-    letter-spacing: 1px;
+
+    font-size:32px;
+
 }
 
-.article-container {
-    max-width: 1200px;
-    align-items: center;
-    margin: 0 auto;
-    margin-bottom: 40px;
+
+
+
+
+/* Hamburger */
+
+.menu-toggle {
+
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+
+    width:32px;
+    height:22px;
+
+    border:none;
+    background:none;
+    padding:0;
+
+    cursor:pointer;
+
 }
 
-article p {
-    text-align: justify;
+
+
+.menu-toggle span {
+
+    display:block;
+    width:100%;
+    height:2px;
+    background:black;
+
+    transition:.3s;
+
 }
+
+
+
+
+/* Hamburger Animation */
+
+.menu-toggle.open span:first-child {
+
+    transform:rotate(45deg) translateY(10px);
+
+}
+
+
+.menu-toggle.open span:last-child {
+
+    transform:rotate(-45deg) translateY(-10px);
+
+}
+
+
+
+
+
+
+/* MOBILE MENÜ */
+
+
+.mobile-menu {
+
+    display:none;
+
+    position:absolute;
+
+    top:45px;
+    left:0;
+
+    background:#82c9b8;
+
+    padding:20px;
+
+    border-radius:10px;
+
+    flex-direction:column;
+    gap:15px;
+
+    z-index:20;
+
+}
+
+
+
+.mobile-menu.active {
+
+    display:flex;
+
+}
+
+
+
+.mobile-menu a {
+
+    text-decoration:none;
+
+}
+
+
+
+
+
+
+/* BILDER */
+
 
 .bild-container {
-    display: flex;
-    gap: 30px;
-    margin-top: 0%; /* Abstand nach oben */
-    align-items: center; 
+
+    flex-direction:column;
+    gap:20px;
+
 }
 
-.product-link01, .product-link02 {
-    flex: 1; /* beide Bilder bekommen gleich viel Platz */
+
+
+.product-link01 img,
+.product-link02 img {
+
+    height:auto;
+
 }
 
-.product-link01 {
-    width: 650px;
-    height: 550px;
-    overflow: hidden;
-    padding: 20px 40px;
-}
 
-.product-link01 img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    background-image:linear-gradient(180deg, #6495ED, #59c5ac);
-    border-radius: 20px;
-}
 
-.product-link02 {
-    width: 650px;
-    height: 550px;
-    overflow: hidden;
-    border-radius: 90% 75% 90% 75%/ 52% 52% 52% 52%;
-    padding: 20px 40px;
-}
 
-.product-link02 img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    background-color: #FFFACD;
-}
 
-.bild-struktur {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
+/* PRODUKT TITEL */
 
-.bild-container {
-    display: flex;
-    gap: 30px;
-}
 
 .text-button-container {
-    display: flex;
-    gap: 60px;
-    align-items: center;
-    border-left: 40px solid #82c9b8;
+
+    flex-direction:column;
+    gap:20px;
+
 }
 
-.button {
-    padding: 16px 64px;
-    font-family: 'Courier New', Courier, monospace;
-    text-align: center;
-    background: black;
-    color: #82c9b8;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: 0.3s;
-}
 
-.button:hover {
-    opacity: 0.8;
-}
 
 .Produkte {
-    font-family: haylad-micro;
-    font-size: 80px;
-    letter-spacing: 2px;
-    font-weight: light;
+
+    font-size:42px;
+
 }
 
 
-.ueberschrift02 {
-    font-family: haylad-micro;
-    font-size: 24px;
-    letter-spacing: 1px;
-    margin-bottom: 20px;
-}
 
-.ueberschrift03 {
-    font-family: haylad-micro;
-    font-size: 20px;
-    letter-spacing: 1px;
-    margin-bottom: 20px;
+.button {
+
+    padding:14px 40px;
+
 }
 
 
-.footer-link {
-    color: inherit;
-    text-decoration: underline;
+
+
+
+/* TEXT */
+
+
+.article-container {
+
+    padding:20px;
+
 }
+
+
+
+article p {
+
+    font-size:16px;
+
+}
+
+
+
+
+
+
+/* FOOTER */
+
 
 .site-footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 40px;
-    background-color: #D3D3D3;
+
+    flex-direction:column;
+    gap:40px;
+    padding:30px 20px;
+
 }
 
+
+
 .footer-right-container {
-    display: flex;
-    gap: 80px;
+
+    flex-direction:column;
+    gap:30px;
+
 }
+
+
 
 .footer-left,
 .footer-right {
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
+
+    align-items:center;
+
+}
+
+
+
 }
