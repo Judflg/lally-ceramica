@@ -577,6 +577,11 @@ article p {
     gap: 3px;
 }
 
+.header-center-bilder img {
+    height: 24px;
+    width: auto;
+}
+
 .bild-container {
     flex-direction:column;
     gap:20px;
