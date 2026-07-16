@@ -434,32 +434,22 @@ article p {
 
     grid-template-columns:auto 1fr auto;
     padding:20px;
-
 }
-
 
 
 .header-left {
-
     justify-self:start;
-
 }
-
 
 
 .header-center {
-
     justify-self:center;
-
 }
 
 
-
 .header-right {
-
     justify-self:end;
     gap:12px;
-
 }
 
 .header-center-bilder img {
@@ -468,9 +458,7 @@ article p {
 }
 
 .ueberschrift01 {
-
     font-size:32px;
-
 }
 
 
@@ -514,16 +502,13 @@ article p {
 /* Hamburger Animation */
 
 .menu-toggle.open span:first-child {
-
     transform:rotate(45deg) translateY(10px);
 
 }
 
 
 .menu-toggle.open span:last-child {
-
     transform:rotate(-45deg) translateY(-10px);
-
 }
 
 
@@ -553,18 +538,13 @@ article p {
 }
 
 
-
-
 .mobile-menu.active {
     display:flex;
 }
 
-
-
 .mobile-menu a {
     text-decoration:none;
 }
-
 
 
 /* BILDER */
@@ -640,8 +620,6 @@ article p {
 }
 
 
-
-
 /* FOOTER */
 
 
@@ -655,7 +633,7 @@ article p {
 .footer-right-container {
 
     flex-direction:column;
-    gap:10px;
+    gap:20px;
     text-align:left;
 }
 
