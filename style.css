@@ -626,7 +626,7 @@ article p {
 .site-footer {
 
     flex-direction:column;
-    gap:30px;
+    gap:20px;
     padding:30px 20px;
 }
 
